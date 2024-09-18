@@ -14,14 +14,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "package": "com.jsm.aora"
+      "package": "com.jsm.aora_catalina_cardenas"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.jsm.aora"
+      "package": "com.jsm.aora_catalina_cardenas"
     },
     "web": {
       "bundler": "metro",
