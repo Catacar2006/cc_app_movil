@@ -6,6 +6,8 @@ import { Link } from "expo-router";
 
 
 import FormField from "../../components/FormField";
+import CustomButton from "../../components/CustomButton";
+import  {createUser} from "../../lib/appwrite";
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -16,7 +18,10 @@ const SignUp = () => {
 
   const [isSubmitting, setSubmitting] = useState(false);
 
-  const sumbit = () => {};
+  const submit = () => {
+    
+    createUser();
+  };
 
   return (
     <SafeAreaView className="bg-primary h-full">
@@ -70,8 +75,8 @@ const SignUp = () => {
           />
 
           <CustomButton
-            title="Sign In"
-            handlePress={sumbit}
+            title="Sign Up"
+            handlePress={submit}
             containerStyles="mt-7"
             isLoading={isSubmitting}
           />
@@ -81,7 +86,7 @@ const SignUp = () => {
               Have an account already?
             </Text>
             <Link
-              href="/sign-up"
+              href="/sign-in"
               className="text-lg font-psemibold text-secondary"
             >
               Sign in
